@@ -52,6 +52,7 @@ def main():
                 if line == "":
                     continue
                 length = len(line)
+                number = sum(d.isdigit() for d in line)
                 if (int(clf.predict([[length, number]])) == 1):
                     content = line + "," + "dga\n"
                     m.write(content)

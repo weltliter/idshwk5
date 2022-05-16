@@ -43,7 +43,7 @@ def main():
         labellist.append(domain.returnLabel())
 
     clf = RandomForestClassifier(random_state=0)
-    clf.fit(featureMatrix, labelList)
+    clf.fit(featurematrix, labellist)
 
     with open("test.txt") as f:
         with open("result.txt", 'w') as m:
